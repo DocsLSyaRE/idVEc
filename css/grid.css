@@ -6,7 +6,7 @@ body {
     grid-template-rows: repeat(3,auto);
     grid-gap: 10px;
     grid-template-areas:    "nav        nav         nav"
-                            "header     header      header"
+                            "aside    header      header"
                             "aside      main        main"
                             "footer     footer      footer" ;
    
@@ -15,11 +15,7 @@ body {
 
 
 #nav{
-
     grid-area: nav;
-
-
-
 }
 
 .header{
