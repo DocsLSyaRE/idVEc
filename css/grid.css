@@ -1,0 +1,41 @@
+/*Grid Structures*/ 
+body {
+    display:grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(3,minmax(15rem,1fr)) ;
+    grid-template-rows: repeat(3,auto);
+    grid-gap: 10px;
+    grid-template-areas:    "nav        nav         nav"
+                            "aside    header      header"
+                            "aside      main        main"
+                            "footer     footer      footer" ;
+   
+        
+}
+
+
+#nav{
+    grid-area: nav;
+}
+
+.header{
+    grid-area: header;
+   
+
+}
+.aside{
+    grid-area: aside;
+   
+}
+
+.main {
+    display:grid;
+    grid-gap:20px;
+    grid-auto-rows: minmax(15rem,1fr);
+    grid-area: main;
+    
+}
+
+.footer{
+    grid-area: footer;
+}
